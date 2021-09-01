@@ -39,10 +39,6 @@ body {
     align-items: center;
     }
 
-    .left-col {
-    width:100%;
-    }
-
     /* for mobiles */
     
     @media only screen and (max-width: 600px) {
@@ -51,15 +47,9 @@ body {
       width:100%
     }
     
-    .cols {
+    .block1 {
     flex-direction: column-reverse;
     }
-
-    p {
-      font-size: 10px;
-    }
-
-    
     
     }
 
