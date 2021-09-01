@@ -46,10 +46,20 @@ body {
     /* for mobiles */
     
     @media only screen and (max-width: 600px) {
+
+    body {
+      width:100%
+    }
     
     .cols {
     flex-direction: column-reverse;
     }
+
+    p {
+      font-size: 10px;
+    }
+
+    
     
     }
 
