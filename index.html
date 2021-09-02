@@ -64,14 +64,18 @@ AOS.init({
  duration: 1200
 });
 
-// from https://www.w3schools.com/howto/howto_js_toggle_text.asp
+// from https://www.w3schools.com/howto/howto_js_toggle_text.asp - I've stored the text as a variable because I'm using it a lot, and I'm changing the page title too (look at the tab in your browser :)
 
 function myFunction() {
   var x = document.getElementById("myDIV");
-  if (x.innerHTML === "Jimmy The Cat") {
-    x.innerHTML = "Angel is Ace!";
+  var text1 = "Jimmy The Cat";
+  var text2 = "Angel is Ace!"
+  if (x.innerHTML === text1) {
+    x.innerHTML = text2;
+    document.title = text2;
   } else {
-    x.innerHTML = "Jimmy The Cat";
+    x.innerHTML = text1;
+    document.title = text1;
   }
 }
 
