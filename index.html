@@ -10,8 +10,12 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-<h1>Jimmy The Cat</h1>
+  <!-- I've added an id here:) -->
+<h1 id="myDIV">Jimmy The Cat</h1>
 <h2>All About Me</h2>
+
+<!-- from https://www.w3schools.com/jsref/event_onclick.asp -->
+<button onclick="myFunction()">Click me</button>
 
 <div class="block1">
 <div class="left-col" data-aos="fade-right">
@@ -59,6 +63,18 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis lacinia 
 AOS.init({
  duration: 1200
 });
+
+// from https://www.w3schools.com/howto/howto_js_toggle_text.asp
+
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.innerHTML === "Jimmy The Cat") {
+    x.innerHTML = "Angel is Ace!";
+  } else {
+    x.innerHTML = "Jimmy The Cat";
+  }
+}
+
 </script>
 
 </body>
